@@ -1,0 +1,274 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: rgb(168, 241, 168);
+}
+
+/* Header Styles */
+header {
+    background-color:#3B6D15 ;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    z-index: 1;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #ffcc00;
+}
+
+/* Hero Section */
+.hero {
+    padding: 60px 20px;
+    background: url('images/hero-background.jpg') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+}
+
+.hero h1 {
+    margin-bottom: 10px;
+    font-size: 3em;
+}
+
+.hero p {
+    font-size: 1.5em;
+    margin-top: 0;
+}
+
+/* Main Content */
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+/* Flag Section */
+#flag img {
+    width: 100%;
+    max-width: 600px;
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+}
+
+/* Gallery Section */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+.gallery-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.gallery-grid img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Contact Form */
+form {
+    display: grid;
+    gap: 10px;
+    max-width: 600px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    font-weight: bold;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+/* Footer Styles */
+footer {
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+}
+
+.social-media {
+    margin-top: 10px;
+}
+
+.social-media a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: color 0.3s;
+}
+
+.social-media a:hover {
+    color: #ffcc00;
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+    header {
+        padding: 15px 0;
+    }
+    
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    .historical_events{
+        font-size: 1.5rem !important;
+    }
+
+
+    .gallery-title{
+        
+        font-size: 30px !important;
+        color: #3B6D15 !important;
+    }
+
+
+    .Quotes_heading{
+        color: #ffcc00!important;
+        font-size: 30px !important;
+    }
+
+    .famous-persons{
+        font-size: 30px !important;
+    }
+
+    .quotes_text{
+        
+        font-size: 1rem !important;
+    }
+
+    .hero h1 {
+        font-size: 2.5em;
+    }
+
+    .hero p {
+        font-size: 1.2em;
+    }
+
+    main {
+        padding: 10px;
+    }
+    
+    #flag img {
+        max-width: 100%;
+    }
+}
+
+
+@media (max-width: 320px) {
+    header {
+        padding: 10px 0;
+
+    }
+
+    .hero {
+        padding: 40px 10px;
+    }
+
+    .hero h1 {
+        font-size: 1.8em;
+    }
+
+    .hero p {
+        font-size: 1em;
+    }
+
+    nav ul li {
+        margin-bottom: 5px;
+    }
+
+    nav a {
+        font-size: 0.8em;
+    }
+
+     .gallery-grid {
+        grid-template-columns: 1fr;
+    } 
+
+    .gallery-grid {
+        width: 200px !important;
+        
+        
+        
+    } 
+
+    .gallery-title{
+        
+        font-size: 30px !important;
+        color: #3B6D15 !important;
+    }
+
+    
+
+    .Quotes_heading{
+        color: #ffcc00!important;
+        font-size: 30px !important;
+    }
+
+    .famous-persons{
+        font-size: 30px !important;
+    }
+
+    .quotes_text{
+        
+        font-size: 1rem !important;
+    }
+
+
+
+    #flag img {
+        max-width: 100%;
+    }
+
+    form {
+        padding: 10px;
+    }
+}
